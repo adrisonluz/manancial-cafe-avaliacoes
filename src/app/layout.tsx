@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster"
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AvaliaAí",
+  title: "Manancial Café - Avaliação",
   description: "Página de avaliação de serviços",
 };
 
