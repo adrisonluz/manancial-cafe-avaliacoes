@@ -10,7 +10,6 @@ Este é um projeto de aplicativo de avaliação para o Manancial Café, constru�
 - **Tailwind CSS**: Framework CSS utilitário para estilização rápida.
 - **ShadCN/UI**: Coleção de componentes de UI reutilizáveis.
 - **Firebase**: Para armazenamento de dados em tempo real (Realtime Database).
-- **Genkit**: Para funcionalidades de IA generativa, como análise de sentimento e sugestão de ações.
 - **Zod**: Para validação de esquemas.
 
 ## Primeiros Passos
@@ -43,30 +42,23 @@ Siga as instruções abaixo para configurar e executar o projeto em seu ambiente
     - Copie as credenciais do Firebase do seu aplicativo.
     - Ative o **Realtime Database**.
     - Copie a URL do seu Realtime Database.
-    - Renomeie o arquivo `.env.example` para `.env` e preencha com as suas credenciais do Firebase e a chave da API do Gemini.
+    - Renomeie o arquivo `.env.example` para `.env` e preencha com as suas credenciais do Firebase.
       ```
       NEXT_PUBLIC_FIREBASE_PROJECT_ID=...
       NEXT_PUBLIC_FIREBASE_APP_ID=...
       # etc.
       NEXT_PUBLIC_FIREBASE_DATABASE_URL=...
-      GEMINI_API_KEY=...
       ```
 
 ### Executando o Servidor de Desenvolvimento
 
-Para iniciar o servidor de desenvolvimento do Next.js e o servidor do Genkit (para as funcionalidades de IA), execute os seguintes comandos em terminais separados:
+Para iniciar o servidor de desenvolvimento do Next.js, execute o seguinte comando:
 
-1.  **Para o aplicativo Next.js:**
-    ```bash
-    npm run dev
-    ```
-    Abra [http://localhost:9002](http://localhost:9002) em seu navegador para ver o aplicativo.
+```bash
+npm run dev
+```
 
-2.  **Para o Genkit:**
-    ```bash
-    npm run genkit:dev
-    ```
-    Isso iniciará o servidor do Genkit, que é necessário para as integrações de IA funcionarem.
+Abra [http://localhost:9002](http://localhost:9002) em seu navegador para ver o aplicativo.
 
 ## Scripts Disponíveis
 
@@ -76,12 +68,10 @@ No diretório do projeto, você pode executar:
 - `npm run build`: Compila o aplicativo para produção.
 - `npm run start`: Inicia um servidor de produção.
 - `npm run lint`: Executa o linter para verificar a qualidade do código.
-- `npm run genkit:dev`: Inicia o servidor do Genkit em modo de desenvolvimento.
 
 ## Estrutura do Projeto
 
 - `src/app/`: Contém as páginas principais e layouts do aplicativo Next.js (App Router).
 - `src/components/`: Contém os componentes React, incluindo os componentes de UI da ShadCN.
-- `src/ai/`: Contém a lógica de IA com Genkit, incluindo os fluxos (`flows`).
 - `src/lib/`: Funções utilitárias e configurações, incluindo a configuração do Firebase.
 - `public/`: Arquivos estáticos.
