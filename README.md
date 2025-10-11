@@ -1,4 +1,4 @@
-# Manancial Café - Avaliação
+# Manancial Café
 
 Este é um projeto de aplicativo de avaliação para o Manancial Café, construído com o Firebase Studio. O aplicativo permite que os clientes avaliem sua experiência em várias categorias, deixem comentários e enviem os dados para um Firebase Realtime Database.
 
@@ -30,7 +30,7 @@ Siga as instruções abaixo para configurar e executar o projeto em seu ambiente
     ```
 2.  Navegue até o diretório do projeto:
     ```bash
-    cd manancial-cafe-avaliacao
+    cd manancial-cafe
     ```
 3.  Instale as dependências:
     ```bash

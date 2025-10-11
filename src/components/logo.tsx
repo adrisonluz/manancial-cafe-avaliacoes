@@ -7,7 +7,7 @@ const Logo = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 140 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    aria-label="Manancial Café - Avaliação logo"
+    aria-label="Manancial Café logo"
     {...props}
   >
     <path
