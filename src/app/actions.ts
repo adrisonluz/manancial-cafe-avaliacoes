@@ -16,7 +16,7 @@ export async function submitFeedback(data: unknown) {
 
   try {
     // Save data to Firebase Realtime Database
-    const ratingsRef = ref(db, 'ratings');
+    const ratingsRef = ref(db, 'avaliacoes');
     await push(ratingsRef, {
       ...parsedData.data,
       createdAt: new Date().toISOString(),

@@ -74,7 +74,7 @@ export default function RatingForm({ onSuccess }: RatingFormProps) {
   return (
     <Card className="w-full animate-in fade-in duration-500">
       <CardHeader className="items-center text-center">
-        <Logo className="h-200 w-auto" />
+        <Logo className="h-auto w-250 mb-0" />
         <CardTitle className="font-headline text-2xl">
           Deixe sua avaliação
         </CardTitle>
@@ -149,7 +149,7 @@ export default function RatingForm({ onSuccess }: RatingFormProps) {
                   <FormItem>
                     <FormLabel>Contato (Opcional)</FormLabel>
                     <FormControl>
-                      <Input placeholder="Seu e-mail ou telefone" {...field} />
+                      <Input placeholder="Seu telefone" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

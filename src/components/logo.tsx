@@ -8,8 +8,8 @@ const Logo = (props: Omit<ComponentProps<typeof Image>, 'src' | 'alt'>) => (
   <Image
     src={logoSrc}
     alt="Manancial Café logo"
-    width={140}
-    height={32}
+    width={200}
+    height={200}
     priority
     {...props}
   />

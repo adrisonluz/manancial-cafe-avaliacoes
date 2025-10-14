@@ -14,7 +14,7 @@ export default function ThankYou() {
   return (
     <Card className="w-full animate-in fade-in duration-500">
       <CardHeader className="items-center text-center">
-        <Logo className="mb-2 h-8 w-auto" />
+        <Logo className="h-auto w-250" />
       </CardHeader>
       <CardContent className="flex flex-col items-center justify-center space-y-4 text-center">
         <CheckCircle2 className="h-16 w-16 text-accent" />
