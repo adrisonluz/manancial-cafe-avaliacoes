@@ -35,6 +35,8 @@ interface RatingFormProps {
   onSuccess: () => void;
 }
 
+const versionApp = process.env.NEXT_PUBLIC_VERSION_APP;
+
 const ratingCategories = [
   { id: "atendimento", label: "Atendimento" },
   { id: "qualidadeProdutos", label: "Qualidade dos produtos" },
@@ -165,6 +167,9 @@ export default function RatingForm({ onSuccess }: RatingFormProps) {
               Enviar Avaliação
             </Button>
           </CardFooter>
+          <div className="text-center text-xs text-muted-foreground mb-4">
+            Versão: {versionApp}
+          </div>
         </form>
       </Form>
     </Card>
